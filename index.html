@@ -7,7 +7,7 @@
     <meta name="author" content="Aidan Dethlefs">
     <meta name="description" content="personal webpage">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class="bg-light">
@@ -30,14 +30,18 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About Me</a>
+                  <a class="nav-link" href="#intro">Introduction</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#work">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#work">Experience</a>
+                  <a class="nav-link" href="#projects">Projects</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education">Education and Certifications</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -45,28 +49,84 @@
 
     <main>
         <div id="about" class="container" style="margin-top: 80px;">
-            <div class="row shadow p-3 mb-5 bg-body rounded">
-                <div class="col-sm">
-                    <img class="img-fluid rounded" src="profilepic.jpg" alt="Picture of Aidan Dethelfs">
-                </div>
-                <div class="col-sm">
-                    <h1>About Me!</h1>
-                    <p>My name is Aidan Patrick Dethlefs and I have quite a few roles. I am currently a Support Team Intern at Kitepipe,
-                    I am a full-time student at WGU studying Computer Science, and most importantantly a Father. Kitepipe is a Boomi Elite Partner and I help provide level II support
-                    to their clients. I am currently enrolled at Western Govenors University and working towards my B.S. of Computer Science. I have wanted to puruse a career in IT/CS
-                    for most of my life as this has always been my passion. I have always been fideling with computers and learning all I can about them. I have found that there is only
-                    one thing in IT and CS that is consitent, and that is learning. To me, this is the most attractive thing about this field of work. I will never in a million years
-                    stop learning and expanding my skill set. I am still a novice in this field. Still I have made quite a few accomplishments that I am very proud of, this website 
-                    being one of them. Recently I was about to start a family of my own, this is my biggest, proudest accomplishment. This family is my #1 priority above all else.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="projects" class="container pt-2">
-
+          <div class="row shadow p-3 mb-5 bg-body rounded align-items-center">
+            <h1>Introduction</h1>
+              <div class="col-lg">
+                <p>My name is Aidan Patrick Dethlefs and I have quite a few roles. I am currently a Support Team Intern at Kitepipe,
+                  I am a full-time student at WGU studying Computer Science, and most importantantly a Father. Kitepipe is a Boomi Elite Partner and I help provide level II support
+                  to their clients. I am currently enrolled at Western Govenors University and working towards my B.S. of Computer Science. I have wanted to puruse a career in IT/CS
+                  for most of my life as this has always been my passion. I have always been fideling with computers and learning all I can about them. I have found that there is only
+                  one thing in IT and CS that is consitent, and that is learning. To me, this is the most attractive thing about this field of work. I will never in a million years
+                  stop learning and expanding my skill set. I am still a novice in this field. Still I have made quite a few accomplishments that I am very proud of, this website 
+                  being one of them. Recently I was about to start a family of my own, this is my biggest, proudest accomplishment. This family is my #1 priority above all else.</p>
+              </div>
+              <div class="col-lg">
+                <img class="img-fluid rounded" src="profilepic.jpg" alt="Picture of Aidan Dethelfs">
+              </div>
+          </div>
         </div>
 
         <div id="work" class="container pt-2">
+
+        </div>
+
+        <div id="projects" class="container pt-2 shadow p-3 mb-5 bg-body rounded">
+          <div class="row">
+            <h1>Projects</h1>
+            <div class="webapp col-lg">
+              <h5>My Website</h5>
+              <p>Inspried by <a class="ext-link" href="https://cloudresumechallenge.dev/docs/the-challenge/aws/">The Cloud Resume Challenege</a></p>
+              <ul class="project-list">
+                <li class="project-item">Build my static website using HTML, CSS, Boostrap5, and Javascript</li>
+                <li class="project-item">Build a "serverless" Web App using Lambda, API Gateway, DynamoDB, Route53, Cloudfront, and S3</li>
+                <li class="project-item">Version control via github</li>
+                <li class="project-item">Improve application security using IAM, S3 policies, CORS, and API authentication</li>
+              </ul>
+            </div>
+            <div class="python col-lg">
+              <h5>Password Generator</h5>
+              <a class="ext-link" href="https://github.com/aidsdeth/password_generator.git">Github Link</a>
+              <ul class="project-list">
+                <li class="project-item">Developed two seperate password generators</li>
+                <li class="project-item">First generator "currentgen.py" is a more user-friendly interface. The program asks the user for different inputs and generates based off of their answers</li>
+                <li class="project-item">Second generator "passwordgen.py" uses ArgumentParser to define different arguments based on the needs of the user</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="windows col-lg">
+              <h5>Windows Server 2016</h5>
+              <p>Virtual Lab</p>
+              <ul class="project-list">
+                <li class="project-item">Installed and setup VirtualBox, Windows Server 2016, and RDP</li>
+                <li class="project-item">Added Windows 7/10 client machines to Windows Server domain</li>
+                <li class="project-item">Created and managed Active Directory user roles and groups</li>
+                <li class="project-item">Configured Window Server 2016 domain settings, server name, TCP/IP settings, and remote desktop</li>
+                <li class="project-item">Setup Group Policy for Chrome Browser to disable incognito mode and certain websites</li>
+                <li class="project-item">Created password policy and lockout policy</li>
+                <li class="project-item">Implemented DHCP to automate client configuration</li>
+                <li class="project-item">Configured Bitlocker to increase security</li>
+                <li class="project-item">Configured custom inbound/outbound rules with Windows Firewall</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="education" class="container pt-2 shadow p-3 mb-5 bg-body rounded">
+          <h1>Education and Certifications</h1>
+          <div class="row">
+            <h5 class="school">Western Govenors University</h5>
+            <p>BS Cloud Computing (in progress)</p>
+            <p>December, 2022 - Present</p>
+            <p><i>Cloud Computing major with a focus on AWS</i></p>
+          </div>
+          <div class="row">
+            <h5 class="school">North Carolina State University</h5>
+            <p>Cyber Security Professional Certificate</p>
+            <p>October, 2021 - May, 2022</p>
+            <p><i>Courses: Network Security, Linux, Windows, Technical Troubleshooting, Scripting, DFIR, Vulnerability Testing</i></p>
+          </div>              
 
         </div>
 
