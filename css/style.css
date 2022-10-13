@@ -11,6 +11,75 @@ h1 {
     text-align: center;
 }
 
+.contactLink {
+    outline: 0;
+    align-items: center;
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-flex;
+    font-size: 16px;
+    flex-shrink: 0;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 6px 8px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}
+.contactLink:hover {
+        box-shadow: 4px 4px 0 #000;
+        transform: translate(-4px,-4px);
+    }
+        :focus-visible{
+        outline-offset: 1px;
+}
+
+img.contactIcon {
+    max-width: 30px;
+    height: auto;
+
+}
+
+
 #education {
     text-align: center;
 }
+
+.ext-link {
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    flex-shrink: 0;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 6px 8px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}
+.ext-link:hover {
+        box-shadow: 4px 4px 0 #000;
+        transform: translate(-4px,-4px);
+    }
+        :focus-visible{
+        outline-offset: 1px;
+}
+
+
