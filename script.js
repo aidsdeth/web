@@ -1,24 +1,22 @@
-function copyText(htmlElement) 
-{
-  if(!htmlElement) {
-    return;
-  }
 
-  let elementText = htmlElement.innerText;
-
-  let inputElement = document.createElement('input');
-  inputElement.setAttribute('value', elementText);
-  document.body.appendChild(inputElement);
-  inputElement.select();
-  document.execCommand('copy');
-  inputElement.parentNode.removeChild(inputElement);
-
+function copyEmail() {
+  navigator.clipboard.writeText
+    ("aidsdeth@gmail.com")
+    
+  const tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: aidsdeth@gmail.com"
 }
 
-document.querySelector('#copy-text-btn').onclick = 
-function()
-{
-  copyText(document.querySelector('#text'));
+function copyPhoneNum() {
+  navigator.clipboard.writeText
+    ("(910)-284-2510")
+  const tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: (910)-284-2510"
+}
+
+function outFunc() {
+  const tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
 }
 
 function goGithub () {

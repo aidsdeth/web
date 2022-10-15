@@ -54,37 +54,61 @@
           <div class="row">
             <h1>Aidan Dethlefs</h1>
               <div class="col-lg">
-                <img class="img-fluid rounded" src="pictures/profilepic.jpg" alt="Picture of Aidan Dethelfs">
+                <img class="profilePic img-fluid rounded-circle" src="pictures/profilepic.jpg" alt="Picture of Aidan Dethelfs">
               </div>
               <div class="col-lg">
                 <h4>My Contact Information and Links</h4>
-                <div class="row">
-                  <button class="contactLink">
+                <div class="d-grid gap-3">
+                  <div class="contactBtn">
+                    <button class="contactLink" onclick="goLinkedin()">
+                      <img class="contactIcon" src="pictures/linkedin-icon.png" alt="Linkedin icon">
+                      LinkedIn
+                    </button>
+                    <button class="contactLink" onclick="goGithub()">
+                      <img class="contactIcon" src="pictures/github-icon.png" alt="Github icon">
+                      Github
+                    </button>
+                  </div>
+                  
+                  <!-- TEMP-->
+                  <div class="contactInput">
                     <img class="contactIcon" src="pictures/mail-icon.png" alt="Mail icon">
-                    aidsdeth@gmail.com
-                  </button>
-                </div>
-                <div class="row">
-                  <button class=contactLink>
+                    <input id="copyMail" type="text" value="aidsdeth@gmail.com">
+                    <div class="mytooltip">
+                      <button onclick="copyFunc()" onmouseout="outFunc()">
+                        <span class="tooltiptext" id="myTooltip">copy to clipboard</span>
+                        copy
+                      </button>
+                    </div>
+                  </div>
+                  <div class="contactInput">
                     <img class="contactIcon" src="pictures/phone-icon.png" alt="Phone icon">
-                    (910)-284-2510
-                  </button>
-                </div>
-                <div class="row">
-                  <button class="contactLink" onclick="goLinkedin()">
-                    <img class="contactIcon" src="pictures/linkedin-icon.png" alt="Linkedin icon">
-                    LinkedIn
-                  </button>
-                </div>
-                <div class="row">
-                  <button class="contactLink" onclick="goGithub()">
-                    <img class="contactIcon" src="pictures/github-icon.png" alt="Github icon">
-                    Github
-                  </button>
+                    <input id="copyNum" type="text" value="(910)-284-2510">
+                    <div class="mytooltip">
+                      <button onclick="copyFunc()" onmouseout="outFunc()">
+                        <span class="tooltiptext" id="myTooltip">copy to clipboard</span>
+                        copy
+                      </button>
+                    </div>
+                    <!-- TEMP-->
+
+                  </div>
+                  <div class="contactBtn"> 
+                    <button class="contactLink" onclick="copyEmail()">
+                      <img class="contactIcon" src="pictures/mail-icon.png" alt="Mail icon">
+                      aidsdeth@gmail.com
+                    </button>
+                  </div>
+                  <div class="contactBtn">
+                    <button class=contactLink onclick="copyPhoneNum()">
+                      <img class="contactIcon" src="pictures/phone-icon.png" alt="Phone icon">
+                      (910)-284-2510
+                    </button>
+                  </div>
                 </div>
               </div>
           </div>
-          <div id="intro" class="row">
+          <div id="intro" class="row p-3">
             <h1>Introduction</h1>
               <div class="col-lg">
                 <p>My name is Aidan Patrick Dethlefs and I have quite a few roles. I am currently a Support Team Intern at Kitepipe,
