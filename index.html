@@ -69,41 +69,23 @@
                       Github
                     </button>
                   </div>
-                  
-                  <!-- TEMP-->
-                  <div class="contactInput">
-                    <img class="contactIcon" src="pictures/mail-icon.png" alt="Mail icon">
-                    <input id="copyMail" type="text" value="aidsdeth@gmail.com">
-                    <div class="mytooltip">
-                      <button onclick="copyFunc()" onmouseout="outFunc()">
-                        <span class="tooltiptext" id="myTooltip">copy to clipboard</span>
-                        copy
-                      </button>
-                    </div>
-                  </div>
-                  <div class="contactInput">
-                    <img class="contactIcon" src="pictures/phone-icon.png" alt="Phone icon">
-                    <input id="copyNum" type="text" value="(910)-284-2510">
-                    <div class="mytooltip">
-                      <button onclick="copyFunc()" onmouseout="outFunc()">
-                        <span class="tooltiptext" id="myTooltip">copy to clipboard</span>
-                        copy
-                      </button>
-                    </div>
-                    <!-- TEMP-->
-
-                  </div>
                   <div class="contactBtn"> 
-                    <button class="contactLink" onclick="copyEmail()">
-                      <img class="contactIcon" src="pictures/mail-icon.png" alt="Mail icon">
-                      aidsdeth@gmail.com
-                    </button>
+                    <div class="hovertip">  
+                      <button class="contactLink" onclick="copyEmail()">
+                        <img class="contactIcon" src="pictures/mail-icon.png" alt="Mail icon">
+                        aidsdeth@gmail.com
+                      </button>
+                          <span class="tooltiptext">Copy to Clipboard</span>
+                    </div>
                   </div>
                   <div class="contactBtn">
-                    <button class=contactLink onclick="copyPhoneNum()">
-                      <img class="contactIcon" src="pictures/phone-icon.png" alt="Phone icon">
-                      (910)-284-2510
-                    </button>
+                    <div class="hovertip">  
+                      <button class=contactLink onclick="copyPhoneNum()">
+                        <img class="contactIcon" src="pictures/phone-icon.png" alt="Phone icon">
+                        (910)-284-2510
+                      </button>
+                        <span class="tooltiptext">Copy to Clipboard</span>
+                    </div>
                   </div>
                 </div>
               </div>
