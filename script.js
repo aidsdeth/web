@@ -2,21 +2,11 @@
 function copyEmail() {
   navigator.clipboard.writeText
     ("aidsdeth@gmail.com")
-    
-  const tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: aidsdeth@gmail.com"
 }
 
 function copyPhoneNum() {
   navigator.clipboard.writeText
     ("(910)-284-2510")
-  const tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: (910)-284-2510"
-}
-
-function outFunc() {
-  const tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
 }
 
 function goGithub () {

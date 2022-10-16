@@ -13,7 +13,7 @@ h1 {
 
 img.profilePic {
     display: block;
-    width: 75%;
+    width: 50%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -21,7 +21,7 @@ img.profilePic {
 #contactInfo {
     margin-top: auto;
     margin-bottom: auto;
-    height: 70%;
+    text-align: center;
 }
 
 .contactInput {
