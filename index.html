@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class="bg-light">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
@@ -111,17 +111,40 @@
           </div>
         </div>
 
-        <div id="work" class="container pt-2">
-
+        <div id="work" class="container pt-2 shadow p-3 mb-5 bg-body rounded">
+          <h1>Work Experience</h1>
+          <div class="row">
+            <div class="workExp col-lg">
+              <div class="row">
+                <div class="workCompany col"><i>Kitepipe, Wilmington NC</i></div>
+                <div class="workTime col">July 2022 - Present</div>
+              </div>
+              <div clas="workTitle"><b>IT Support Intern</b></div>
+            </div>
+            <div class="work-shakataco col-lg">
+              <div class="row">
+                <div class="workCompany col"><i>Shaka Taco, Surf City NC</i></div>
+                <div class="workTime col">March 2018 - August 2022</div>
+              </div>
+              <div class="workTitle"><b>Shift Leader / Manager</b></div>
+              <ul class="work-list">
+                <li class="work-item">Communicate with customers regarding customer satisfaction via face-to-face interactions or telephone</li>
+                <li class="work-item">Identify issues, analyze information, and provide solutions to problems to ensure a positive customer experience</li>
+                <li class="work-item">Demonstrate leadership skills while supervising employees</li>
+                <li class="work-item">Train and mentor new employees follow Shaka Taco standard operating procedures</li>
+                <li class="work-item">Ensure all safety regulations are followed</li>
+                <li class="work-item">Assist in design and implementation of new policies and revision of old policies to increase work efficiency by over 50%</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div id="projects" class="container pt-2 shadow p-3 mb-5 bg-body rounded">
+          <h1>Projects</h1>
           <div class="row">
-            <h1>Projects</h1>
             <div class="webapp col-lg">
               <h5>My Website</h5>
-              <p>Inspired by <input type="button" value="The Cloud Resume Challenge" class="ext-link" onclick="goCloudResume()"/></p>
-              
+              <p>Inspired by:  <input type="button" value="The Cloud Resume Challenge" class="ext-link" onclick="goCloudResume()"/></p>
               <ul class="project-list">
                 <li class="project-item">Build my static website using HTML, CSS, Boostrap5, and Javascript</li>
                 <li class="project-item">Build a "serverless" Web App using Lambda, API Gateway, DynamoDB, Route53, Cloudfront, and S3</li>
@@ -129,7 +152,7 @@
                 <li class="project-item">Improve application security using IAM, S3 policies, CORS, and API authentication</li>
               </ul>
             </div>
-            <div class="python col-lg">
+            <div class="pythProj col-lg">
               <h5>Password Generator</h5>
               <input type="button" class="ext-link" value="Github Link" onclick="goPassGen()"/>
               <ul class="project-list">

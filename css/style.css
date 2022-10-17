@@ -5,6 +5,7 @@
 
 body {
     position: relative;
+    background-color: lightgreen;
 }
 
 h1 {
@@ -18,15 +19,32 @@ img.profilePic {
     margin-left: auto;
 }
 
+img.contactIcon {
+    max-width: 30px;
+    height: auto;
+
+}
+
+
+#education {
+    text-align: center;
+}
+
 #contactInfo {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
 }
 
-.contactInput {
-    display: inline-block;
+.workLocation {
+    text-align: end;
 }
+
+.workTime {
+    text-align: end;
+}
+
+/* Contact copy info button design */
 
 .contactLink {
     outline: 0;
@@ -55,16 +73,7 @@ img.profilePic {
         outline-offset: 1px;
 }
 
-img.contactIcon {
-    max-width: 30px;
-    height: auto;
-
-}
-
-
-#education {
-    text-align: center;
-}
+/* External link button design */
 
 .ext-link {
     outline: 0;
