@@ -1,16 +1,14 @@
-
-* {
-    border:
-}
-
 body {
     position: relative;
-    background-color: lightgreen;
+    background-color: #F8EEE7;
 }
 
 h1 {
     text-align: center;
+    background-color: lightseagreen;
+    padding: 5px;
 }
+
 
 img.profilePic {
     display: block;
@@ -25,15 +23,36 @@ img.contactIcon {
 
 }
 
+#introDesign {
+    background-color: lightcoral;
+}
+
+#skill-tech {
+    background-color: lightcoral;
+}
 
 #education {
     text-align: center;
+}
+
+#educationDesign {
+    background-color: lightcoral;
+}
+
+h3 {
+    text-align: center;
+    background-color: lightseagreen;
 }
 
 #contactInfo {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
+    background-color: lightcoral;
+}
+
+#indvWork {
+    background-color: lightcoral;
 }
 
 .workLocation {
@@ -42,6 +61,10 @@ img.contactIcon {
 
 .workTime {
     text-align: end;
+}
+
+#indvProject {
+    background-color: lightcoral;
 }
 
 /* Contact copy info button design */
