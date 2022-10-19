@@ -1,6 +1,37 @@
+
+/* 
+Color Scheme: 
+#F8F9F9 Black Haze (actually a white)
+#999A9B Oslo Gray
+#CF874B Raw Sienna
+#A4945B Barley Corn
+#3F3F3E Tuatara
+
+*/
+
+* {
+    
+}
+
+html {
+    height: auto;
+    border: solid yellow 1px;
+}
+
 body {
-    position: relative;
-    background-color: #F8EEE7;
+    height: auto;
+    background-color: #999A9B;
+    border: solid green 1px;
+}
+
+main {
+    width: 100%;
+    border: solid purple 1px;
+}
+
+footer {
+    background-color: black;
+    height: 300px;
 }
 
 h1 {
@@ -9,6 +40,38 @@ h1 {
     padding: 5px;
 }
 
+h3 {
+    text-align: center;
+    background-color: lightseagreen;
+}
+
+.container {
+    border: solid red 1px;
+}
+
+.col-lg {
+    border: solid brown 1px;
+}
+
+.navbar {
+    background-color: #3F3F3E;
+
+}
+
+    .navbar a {
+        color: #F8F9F9;
+
+    }
+
+    .navbar button {
+        background-color: #F8F9F9;
+    }
+
+    .navbar .offcanvas {
+        background-color: #3F3F3E;
+        color: #F8F9F9;
+
+    }
 
 img.profilePic {
     display: block;
@@ -23,25 +86,8 @@ img.contactIcon {
 
 }
 
-#introDesign {
+.introDesign {
     background-color: lightcoral;
-}
-
-#skill-tech {
-    background-color: lightcoral;
-}
-
-#education {
-    text-align: center;
-}
-
-#educationDesign {
-    background-color: lightcoral;
-}
-
-h3 {
-    text-align: center;
-    background-color: lightseagreen;
 }
 
 #contactInfo {
@@ -51,7 +97,7 @@ h3 {
     background-color: lightcoral;
 }
 
-#indvWork {
+.indvWork {
     background-color: lightcoral;
 }
 
@@ -63,8 +109,45 @@ h3 {
     text-align: end;
 }
 
-#indvProject {
+img.kpDraw {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+img.shakaDraw {
+    width: 100%;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.indvProject {
     background-color: lightcoral;
+}
+
+#education {
+    text-align: center;
+}
+
+#educationDesign {
+    background-color: lightcoral;
+}
+
+#educationDesign .row {
+    margin-bottom: 10px;
+    padding:5px;
+    width: 100%
+}
+
+    #educationDesign .row p, i, h5 {
+        margin-bottom: 5px;
+    }
+
+.row .educationTitle {
+    width: fit-content;
+    float: inline-start;
 }
 
 /* Contact copy info button design */
