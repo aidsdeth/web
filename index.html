@@ -60,43 +60,44 @@
       <div class="container pt-2" style="margin-top:80px;">
         <h1>Aidan Dethlefs</h1>
         <div class="row">
+          <div class="backdrop shadow rounded d-none d-lg-block"></div>
           <div class="col-lg p-3">
             <img class="profilePic img-fluid rounded-circle" src="pictures/profilepic.jpg" alt="Picture of Aidan Dethelfs">
           </div>
           <div class="col-lg p-2">
             <h3>Contact Information</h3>
-            <div id="contactInfo" class="shadow p-3 rounded align-items-center">
-              <div class="d-grid gap-3">
-                <div class="contactBtn">
-                  <button class="contactLink" onclick="goLinkedin()">
-                    <img class="contactIcon" src="pictures/linkedin-icon.png" alt="Linkedin icon">
-                    LinkedIn
-                  </button>
-                  <button class="contactLink" onclick="goGithub()">
-                    <img class="contactIcon" src="pictures/github-icon.png" alt="Github icon">
-                    Github
-                  </button>
-                </div>
-                <div class="contactBtn">
-                  <div class="hovertip">
-                    <button class="contactLink" onclick="copyEmail()">
-                      <img class="contactIcon" src="pictures/mail-icon.png" alt="Mail icon">
-                      aidsdeth@gmail.com
+              <div class="contactInfo shadow p-3 rounded align-items-center">
+                <div class="d-grid gap-3">
+                  <div class="contactBtn">
+                    <button class="contactLink" onclick="goLinkedin()">
+                      <img class="contactIcon" src="pictures/linkedin-icon.png" alt="Linkedin icon">
+                      LinkedIn
                     </button>
-                      <span class="tooltiptext">Copy to Clipboard</span>
+                    <button class="contactLink" onclick="goGithub()">
+                      <img class="contactIcon" src="pictures/github-icon.png" alt="Github icon">
+                      Github
+                    </button>
                   </div>
-                </div>
-                <div class="contactBtn">
-                  <div class="hovertip">
-                    <button class=contactLink onclick="copyPhoneNum()">
-                      <img class="contactIcon" src="pictures/phone-icon.png" alt="Phone icon">
-                      (910)-284-2510
-                    </button>
-                      <span class="tooltiptext">Copy to Clipboard</span>
+                  <div class="contactBtn">
+                    <div class="hovertip">
+                      <button class="contactLink" onclick="copyEmail()">
+                        <img class="contactIcon" src="pictures/mail-icon.png" alt="Mail icon">
+                        aidsdeth@gmail.com
+                      </button>
+                        <span class="tooltiptext">Copy to Clipboard</span>
+                    </div>
+                  </div>
+                  <div class="contactBtn">
+                    <div class="hovertip">
+                      <button class=contactLink onclick="copyPhoneNum()">
+                        <img class="contactIcon" src="pictures/phone-icon.png" alt="Phone icon">
+                        (910)-284-2510
+                      </button>
+                        <span class="tooltiptext">Copy to Clipboard</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -171,7 +172,7 @@
             </ul>
           </div>
           <div class="pictureWork col-lg shadow rounded p-4 d-none d-lg-block">
-            <img class="shakaDraw img-fluid rounded" src="pictures/ShakaDrawing.png" alt="Sketch of Shaka Taco in Surf City, NC">
+            <img class="shakaDraw img-fluid rounded mx-auto" src="pictures/ShakaDrawing.png" alt="Sketch of Shaka Taco in Surf City, NC">
           </div>
         </div>
       </div>
@@ -180,6 +181,7 @@
 
       <div id="projects" class="container pt-2">
         <h1>Projects</h1>
+        <div class="backdrop2 shadow rounded d-none d-lg-block"></div>
         <div class="row gap-4 mb-3 p-2">
           <div class="indvProject col-lg shadow rounded p-4">
             <h5>My Website</h5>
@@ -252,7 +254,16 @@
     </main>
 
     <footer>
-
+      <div>
+        <ul>
+          <li><a href="mailto:aidsdeth@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/aidandeth/" onclick="goLinkedin(); return false;">LinkedIn</a></li>
+          <li><a href="https://github.com/aidsdeth" onclick="goGithub(); return false;">Github</a></li>
+          <li>
+            <p>👋</p>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
