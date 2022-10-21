@@ -7,6 +7,7 @@
     <meta name="author" content="Aidan Dethlefs">
     <meta name="description" content="personal webpage">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8d7f5f4ecc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -17,13 +18,13 @@
 
     <!-- Start Navbar -->
 
-    <nav class="navbar fixed-top">
+    <nav class="navbar shadow fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Aidan Dethlefs</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pages</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -37,6 +38,9 @@
                 <a class="nav-link" href="#intro">Introduction</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills and Technologies</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#work">Experience</a>
               </li>
               <li class="nav-item">
@@ -46,6 +50,41 @@
                 <a class="nav-link" href="#education">Education and Certifications</a>
               </li>
             </ul>
+            <div class="border-top my-3"></div>
+            <h5 class="offcanvas-contact">Get in touch!</h5>
+            <ul class="navbarContact justify-content-end flex-grow-1 pe-3">
+              <li>
+                <button class="contactLink" onclick="goLinkedin()">
+                  <i class="fa-brands fa-linkedin fa-2xl"></i>
+                  LinkedIn
+                </button>
+              </li>
+              <li>
+                <button class="contactLink" onclick="goGithub()">
+                  <i class="fa-brands fa-github fa-2xl"></i>
+                  Github
+                </button>
+              </li>
+              <li>
+                <div class="hovertip">
+                  <button class="contactLink" onclick="copyEmail()">
+                    <i class="fa-solid fa-envelope fa-2xl"></i>
+                    aidsdeth@gmail.com
+                  </button>
+                    <span class="tooltiptext">Copy to Clipboard</span>
+                </div>
+              </li>
+              <li>
+                <div class="hovertip">
+                  <button class=contactLink onclick="copyPhoneNum()">
+                    <i class="fa-solid fa-phone fa-xl"></i>
+                    (910)-284-2510
+                  </button>
+                    <span class="tooltiptext">Copy to Clipboard</span>
+                </div>
+              </li>
+            </ul>
+            <div class="border-top my-3"></div>
           </div>
         </div>
       </div>
@@ -55,59 +94,15 @@
 
     <main>
 
-      <!-- Start First Container -->
+      <!-- Start Intro Container -->
 
-      <div class="container pt-2" style="margin-top:80px;">
-        <h1>Aidan Dethlefs</h1>
+      <div id="intro" class="container pt-2" style="margin-top:80px;">
+        <h1 class="my-4">Aidan Dethlefs</h1>
         <div class="row">
           <div class="backdrop shadow rounded d-none d-lg-block"></div>
           <div class="col-lg p-3">
             <img class="profilePic img-fluid rounded-circle" src="pictures/profilepic.jpg" alt="Picture of Aidan Dethelfs">
           </div>
-          <div class="col-lg p-2">
-            <h3>Contact Information</h3>
-              <div class="contactInfo shadow p-3 rounded align-items-center">
-                <div class="d-grid gap-3">
-                  <div class="contactBtn">
-                    <button class="contactLink" onclick="goLinkedin()">
-                      <img class="contactIcon" src="pictures/linkedin-icon.png" alt="Linkedin icon">
-                      LinkedIn
-                    </button>
-                    <button class="contactLink" onclick="goGithub()">
-                      <img class="contactIcon" src="pictures/github-icon.png" alt="Github icon">
-                      Github
-                    </button>
-                  </div>
-                  <div class="contactBtn">
-                    <div class="hovertip">
-                      <button class="contactLink" onclick="copyEmail()">
-                        <img class="contactIcon" src="pictures/mail-icon.png" alt="Mail icon">
-                        aidsdeth@gmail.com
-                      </button>
-                        <span class="tooltiptext">Copy to Clipboard</span>
-                    </div>
-                  </div>
-                  <div class="contactBtn">
-                    <div class="hovertip">
-                      <button class=contactLink onclick="copyPhoneNum()">
-                        <img class="contactIcon" src="pictures/phone-icon.png" alt="Phone icon">
-                        (910)-284-2510
-                      </button>
-                        <span class="tooltiptext">Copy to Clipboard</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- End First Container -->
-
-      <!-- Start Intro Container -->
-
-      <div id="intro" class="container pt-2">
-        <div class="row gap-3">
           <div class="col-lg p-2">
             <h1>Introduction</h1>
             <div class=" introDesign shadow rounded align-items-center p-4">
@@ -120,11 +115,31 @@
               being one of them. Recently I was about to start a family of my own, this is my biggest, proudest accomplishment. This family is my #1 priority above all else.</p>
             </div>
           </div>
-          <div class="col-lg p-2">
-            <h1>Skills and Technologies</h1>
-            <div class="introDesign shadow rounded align-items-center p-4">
+        </div>
+      </div>
 
-            </div>
+      <!-- End Intro Container -->
+
+      <!-- Start Skills Container -->
+
+      <div id="skills" class="container pt-2">
+        <h1>Skills and Technologies</h1>
+        <div class="skillsDesign row shadow rounded py-4 gap-3">
+          <div class="skillsDesignCol col-lg p-2">
+            <ul class="skillsList">
+              <li class="skills-item">Filler</li>
+              <li class="skills-item">Filler</li>
+              <li class="skills-item">Filler</li>
+              <li class="skills-item">Filler</li>
+            </ul>
+          </div>
+          <div class="skillsDesignCol col-lg p-2">
+            <ul class="skillsList">
+              <li class="skills-item">Filler</li>
+              <li class="skills-item">Filler</li>
+              <li class="skills-item">Filler</li>
+              <li class="skills-item">Filler</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -136,7 +151,7 @@
       <div id="work" class="container pt-2">
         <h1>Work Experience</h1>
         <div class="row gap-4 p-2">
-          <div class="pictureWork col-lg shadow rounded p-4 d-none d-lg-block">
+          <div class="pictureWork col-lg p-4 d-none d-lg-block">
             <img class="kpDraw img-fluid rounded mx-auto" src="pictures/kitepipelogo.png" alt="Kitepipe Logo">
           </div>
           <div class="indvWork col-lg shadow rounded p-4">
@@ -171,8 +186,8 @@
               <li class="work-item">Assist in design and implementation of new policies and revision of old policies to increase work efficiency by over 50%</li>
             </ul>
           </div>
-          <div class="pictureWork col-lg shadow rounded p-4 d-none d-lg-block">
-            <img class="shakaDraw img-fluid rounded mx-auto" src="pictures/ShakaDrawing.png" alt="Sketch of Shaka Taco in Surf City, NC">
+          <div class="pictureWork col-lg p-4 d-none d-lg-block">
+            <img class="shakaDraw img-fluid rounded mx-auto" src="pictures/shakalogo.png" alt="Sketch of Shaka Taco in Surf City, NC">
           </div>
         </div>
       </div>
@@ -185,12 +200,12 @@
         <div class="row gap-4 mb-3 p-2">
           <div class="indvProject col-lg shadow rounded p-4">
             <h5>My Website</h5>
-            <p>Inspired by:<input type="button" value="The Cloud Resume Challenge" class="ext-link" onclick="goCloudResume()"></p>
+            <p>Inspired by:  <input type="button" value="The Cloud Resume Challenge" class="ext-link" onclick="goCloudResume()"></p>
             <ul class="project-list">
-              <li class="project-item">Build my static website using HTML, CSS, Boostrap5, and Javascript</li>
-              <li class="project-item">Build a "serverless" Web App using Lambda, API Gateway, DynamoDB, Route53, Cloudfront, and S3</li>
+              <li class="project-item">Built my static website using HTML, CSS, Boostrap5, and Javascript</li>
+              <li class="project-item">Built a "serverless" Web App using Lambda, API Gateway, DynamoDB, Route53, Cloudfront, and S3</li>
               <li class="project-item">Version control via github</li>
-              <li class="project-item">Improve application security using IAM, S3 policies, CORS, and API authentication</li>
+              <li class="project-item">Improved application security using IAM, S3 policies, CORS, and API authentication</li>
             </ul>
           </div>
           <div class="indvProject col-lg shadow rounded p-4">
