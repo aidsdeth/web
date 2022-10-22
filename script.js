@@ -24,3 +24,7 @@ function goCloudResume () {
 function goPassGen () {
     return window.open("https://github.com/aidsdeth/password_generator", "_blank")
 }
+
+function goNCSUcerts () {
+    return window.open("https://api.badgr.io/public/collections/fa772cfc22ea459b91b81a94171ed99d", "_blank")
+}

@@ -49,6 +49,10 @@ h3 {
     color: #dad7cd;
 }
 
+li {
+    margin-bottom: 5px;
+}
+
 /* Design for Navbar */
 
 .navbar {
@@ -116,6 +120,10 @@ img.profilePic {
     color: #cadfa7;
 }
 
+.skillsList {
+    list-style-type: none;
+}
+
 .contactInfo {
     margin-top: auto;
     margin-bottom: auto;
@@ -159,6 +167,16 @@ img.shakaDraw {
 .indvProject {
     background-color: #588157 ;
     color: #cadfa7;
+}
+
+.indvProject h5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.indvProject p {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Design for Education */
