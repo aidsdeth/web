@@ -207,6 +207,7 @@ img.shakaDraw {
 
 /* Design for footer elements and animation */
 
+
 footer ul {
     display: inline-grid;
     grid-auto-flow: row;
@@ -250,7 +251,15 @@ footer div {
     background-color: #344e41;
     line-height: 1.3;
 }
-  
+
+.footerCounter {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #dad7cd;
+    border: 1px solid red;
+}
+
 @keyframes wave-animation {
     0%,
     100% {

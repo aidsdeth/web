@@ -274,6 +274,28 @@
     </main>
 
     <footer>
+      <div class="footerCounter">
+        <p class="counter">Visitors count:</p>
+        <p id="body"></p>
+
+        <script type="text/javascript">
+          async function get_visitors() {
+            try {
+              let response = await fetch('https://jmdukzepw4.execute-api.us-east-1.amazonaws.com/default/visitorCounter', {
+                method: 'GET',
+              });
+              let data = await response.json()
+              document.getElementById("body").innerHTML = data;
+              console.log(data);
+              return data;
+            } catch (err) {
+              console.error(err);
+            }
+          }
+
+          get_visitors();
+        </script>
+      </div>
       <div>
         <ul>
           <li><a href="mailto:aidsdeth@gmail.com">Email</a></li>
